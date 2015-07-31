@@ -1,7 +1,8 @@
 # Akka HTTP microservice example
 
 This project demonstrates how a small microservice can be load tested in a CI pipeline.
-To not distract anyone with business logic this project is based upon the [Akka http Template](https://www.typesafe.com/activator/template/akka-http-microservice)
+To not distract anyone with business logic, this project is based upon the [Akka http Template](https://www.typesafe.com/activator/template/akka-http-microservice)
+It provides an endpoint to translate an IP adress into a geo position.
 
 
 ## Usage
@@ -60,7 +61,8 @@ $ sbt
 > gatling-it:test
 ```
 
-This will execute the IPRequestsSimulation 
+This will execute the IPRequestsSimulation against the usual boot2docker IP. 
+You can change it in the `IPRequestsSimulation.scala` file
 
 ## Author & license
 
