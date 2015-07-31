@@ -1,21 +1,8 @@
 # Akka HTTP microservice example
 
-This project demonstrates the [Akka HTTP](http://doc.akka.io/docs/akka-stream-and-http-experimental/current/scala.html) library and Scala to write a simple REST (micro)service. The project shows the following tasks that are typical for most Akka HTTP-based projects:
+This project demonstrates how a small microservice can be load tested in a CI pipeline.
+To not distract anyone with business logic this project is based upon the [Akka http Template](https://www.typesafe.com/activator/template/akka-http-microservice)
 
-* starting standalone HTTP server,
-* handling file-based configuration,
-* logging,
-* routing,
-* deconstructing requests,
-* unmarshalling JSON entities to Scala's case classes,
-* marshaling Scala's case classes to JSON responses,
-* error handling,
-* issuing requests to external services,
-* testing with mocking of external services.
-
-The service in the template provides two REST endpoints - one which gives GeoIP info for given IP and another for calculating geographical distance between given pair of IPs. The project uses the service [Telize](http://www.telize.com/) which offers JSON IP and GeoIP REST API for free.
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Usage
 
@@ -59,7 +46,12 @@ $ curl -X POST -H 'Content-Type: application/json' http://localhost:9000/ip -d '
 }
 ```
 
-### Testing
+### Docker
+
+build a docker image with the `docker:publishLocal` command and run the container on your shell with `docker run`.
+Do not forget to expose the Port 9000
+
+### Loadtesting
 
 Execute tests using `test` command:
 
@@ -67,6 +59,8 @@ Execute tests using `test` command:
 $ sbt
 > test
 ```
+
+This will execute the IPRequestsSimulation 
 
 ## Author & license
 
