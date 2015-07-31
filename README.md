@@ -66,6 +66,5 @@ This will execute the IPRequestsSimulation
 
 If you have any questions regarding this project contact:
 
-Łukasz Sowa <lukasz@theiterators.com> from [Iterators](http://www.theiterators.com).
-
+Christian Uhl <christian.uhl@codecentric.de> from [codecentric](codecentric.de)
 For licensing info see LICENSE file in project's root directory.
