@@ -53,11 +53,11 @@ Do not forget to expose the Port 9000
 
 ### Loadtesting
 
-Execute tests using `test` command:
+Execute tests using `gatling-it:test` command:
 
 ```
 $ sbt
-> test
+> gatling-it:test
 ```
 
 This will execute the IPRequestsSimulation 
