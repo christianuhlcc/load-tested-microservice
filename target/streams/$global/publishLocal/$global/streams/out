@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mlocal do not support transaction. ivy pattern does not use revision as a directory[0m
+[0m[[0minfo[0m] [0m	published load-tested-microservice_2.11 to /Users/christianuhl/.ivy2/local/com.codecentric/load-tested-microservice_2.11/1.0/poms/load-tested-microservice_2.11.pom[0m
+[0m[[0minfo[0m] [0m	published load-tested-microservice_2.11 to /Users/christianuhl/.ivy2/local/com.codecentric/load-tested-microservice_2.11/1.0/jars/load-tested-microservice_2.11.jar[0m
+[0m[[0minfo[0m] [0m	published load-tested-microservice_2.11 to /Users/christianuhl/.ivy2/local/com.codecentric/load-tested-microservice_2.11/1.0/srcs/load-tested-microservice_2.11-sources.jar[0m
+[0m[[0minfo[0m] [0m	published load-tested-microservice_2.11 to /Users/christianuhl/.ivy2/local/com.codecentric/load-tested-microservice_2.11/1.0/docs/load-tested-microservice_2.11-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	published ivy to /Users/christianuhl/.ivy2/local/com.codecentric/load-tested-microservice_2.11/1.0/ivys/ivy.xml[0m

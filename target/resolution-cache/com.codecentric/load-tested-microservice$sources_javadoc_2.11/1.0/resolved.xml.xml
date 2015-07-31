@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="com.codecentric"
+		module="load-tested-microservice$sources_javadoc_2.11"
+		revision="1.0"
+		status="integration"
+		publication="20150731133524"
+	/>
+	<configurations>
+		<conf name="gatling" visibility="public" description="" extends="test"/>
+		<conf name="it" visibility="public" description="" extends="runtime"/>
+		<conf name="gatling-it" visibility="public" description="" extends="it"/>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="it-internal" visibility="private" description="" extends="it,optional,provided"/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.10" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-actor_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-actor_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe" name="config" rev="1.2.1" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="config" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="config" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-stream-experimental_2.11" rev="1.0-RC2" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-stream-experimental_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-stream-experimental_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.reactivestreams" name="reactive-streams" rev="1.0.0" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="reactive-streams" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="reactive-streams" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-http-core-experimental_2.11" rev="1.0-RC2" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-http-core-experimental_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-http-core-experimental_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-parsing-experimental_2.11" rev="1.0-RC2" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-parsing-experimental_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-parsing-experimental_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-http-scala-experimental_2.11" rev="1.0-RC2" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-http-scala-experimental_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-http-scala-experimental_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-http-spray-json-experimental_2.11" rev="1.0-RC2" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-http-spray-json-experimental_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-http-spray-json-experimental_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.spray" name="spray-json_2.11" rev="1.3.1" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="spray-json_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="spray-json_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-http-testkit-scala-experimental_2.11" rev="1.0-RC2" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-http-testkit-scala-experimental_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-http-testkit-scala-experimental_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-testkit_2.11" rev="2.3.10" transitive="false" conf="gatling->default(compile);it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);test->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="akka-testkit_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="akka-testkit_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.4" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="scalatest_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scalatest_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling.highcharts" name="gatling-charts-highcharts" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-charts-highcharts" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-charts-highcharts" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.6/">
+			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-library" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-charts" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-charts" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-charts" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-core" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.6/">
+			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-reflect" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.dongxiguo" name="fastring_2.11" rev="0.2.4" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="fastring_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="fastring_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="net.sf.opencsv" name="opencsv" rev="2.3" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="opencsv" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="opencsv" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.googlecode.concurrentlinkedhashmap" name="concurrentlinkedhashmap-lru" rev="1.4.2" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="concurrentlinkedhashmap-lru" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="concurrentlinkedhashmap-lru" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.threeten" name="threetenbp" rev="1.2" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="threetenbp" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="threetenbp" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.11" rev="1.0.4" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.ning" name="async-http-client" rev="1.9.22" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="async-http-client" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="async-http-client" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.netty" name="netty" rev="3.10.3.Final" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="netty" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="netty" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.12" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="slf4j-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="slf4j-api" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.typesafe.scala-logging" name="scala-logging_2.11" rev="3.1.0" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="scala-logging_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-logging_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.3" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="logback-classic" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="logback-classic" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="ch.qos.logback" name="logback-core" rev="1.1.3" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="logback-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="logback-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="jsonpath_2.11" rev="0.6.4" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jsonpath_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jsonpath_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.5.3" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jackson-databind" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jackson-databind" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.5.0" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jackson-annotations" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jackson-annotations" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.5.3" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jackson-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jackson-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.fastjson" name="boon" rev="0.32" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="boon" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="boon" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="net.sf.saxon" name="Saxon-HE" rev="9.6.0-5" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="Saxon-HE" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="Saxon-HE" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.jodd" name="jodd-lagarto" rev="3.6.5" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jodd-lagarto" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jodd-lagarto" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.jodd" name="jodd-core" rev="3.6.5" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jodd-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jodd-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.jodd" name="jodd-log" rev="3.6.5" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jodd-log" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jodd-log" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.tdunning" name="t-digest" rev="3.0" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="t-digest" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="t-digest" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-app" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-app" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-app" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-http" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-http" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-http" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.jcraft" name="jzlib" rev="1.1.3" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="jzlib" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jzlib" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang.modules" name="scala-xml_2.11" rev="1.0.4" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="scala-xml_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-xml_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-jms" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-jms" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-jms" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.geronimo.specs" name="geronimo-jms_1.1_spec" rev="1.1.1" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="geronimo-jms_1.1_spec" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="geronimo-jms_1.1_spec" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-jdbc" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-jdbc" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-jdbc" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-redis" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-redis" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-redis" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="net.debasishg" name="redisclient_2.11" rev="2.14" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="redisclient_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="redisclient_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="commons-pool" name="commons-pool" rev="1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="commons-pool" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="commons-pool" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-metrics" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-metrics" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-metrics" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.github.scopt" name="scopt_2.11" rev="3.3.0" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="scopt_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scopt_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-recorder" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-recorder" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-recorder" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang.modules" name="scala-swing_2.11" rev="1.0.2" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="scala-swing_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-swing_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.bouncycastle" name="bcpkix-jdk15on" rev="1.52" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="bcpkix-jdk15on" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="bcpkix-jdk15on" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.bouncycastle" name="bcprov-jdk15on" rev="1.52" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="bcprov-jdk15on" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="bcprov-jdk15on" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="io.gatling" name="gatling-test-framework" rev="2.1.6" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="gatling-test-framework" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gatling-test-framework" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-sbt" name="test-interface" rev="1.0" transitive="false" conf="gatling->default(compile);test->default(compile);test-internal->default(compile)">
+			<artifact name="test-interface" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="test-interface" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.5" transitive="false" conf="it->default(compile);gatling-it->default(compile);compile->default(compile);runtime->default(compile);it-internal->default(compile);compile-internal->default(compile);runtime-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.5/">
+			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-library" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.5" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-compiler" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.5" transitive="false" conf="scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.5/">
+			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-reflect" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang.modules" name="scala-xml_2.11" rev="1.0.3" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="scala-xml_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-xml_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.11" rev="1.0.3" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="jline" name="jline" rev="2.12" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="jline" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jline" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+	</dependencies>
+</ivy-module>
